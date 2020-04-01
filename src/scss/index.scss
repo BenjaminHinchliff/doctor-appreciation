@@ -1,1 +1,28 @@
+$theme-colors: (
+    "primary": rgb(194, 241, 192),
+    "secondary": #79A177,
+);
+
 @import "~bootstrap/scss/bootstrap";
+
+/* ubuntu-regular - latin */
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/ubuntu-v14-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Ubuntu Regular'), local('Ubuntu-Regular'),
+        url('../fonts/ubuntu-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/ubuntu-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/ubuntu-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/ubuntu-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/ubuntu-v14-latin-regular.svg#Ubuntu') format('svg'); /* Legacy iOS */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+}
+
+p, button {
+    font-family: 'Vollkorn', Georgia, Times, serif;
+}

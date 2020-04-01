@@ -6,7 +6,7 @@ if ($mysqli->connect_errno) {
     exit();
 }
 
-$res = $mysqli->query("SELECT `enterer`, `timestamp`, `content` FROM `entries`");
+$res = $mysqli->query("SELECT `enterer`, `timestamp`, `content` FROM `entries` ORDER BY RAND()");
 if(!$res) {
     echo "Failed to query mysql database: " . $mysqli->error;
     exit();
@@ -18,6 +18,7 @@ while($row = $res->fetch_assoc()) {
 }
 
 header("Content-Type: application/json");
+header("Access-Control-Allow-Origin: *");
 echo json_encode($out);
 
 ?>

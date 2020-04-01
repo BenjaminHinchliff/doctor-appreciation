@@ -17,6 +17,7 @@
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
     "exports-loader": "^0.7.0",
+    "file-loader": "^6.0.0",
     "node-sass": "^4.13.1",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^8.0.2",
@@ -28,6 +29,7 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
+    "jquery-backstretch": "^2.1.18",
     "popper.js": "^1.16.1"
   }
 }
