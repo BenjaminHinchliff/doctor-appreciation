@@ -5,19 +5,7 @@ $theme-colors: (
 
 @import "~bootstrap/scss/bootstrap";
 
-/* ubuntu-regular - latin */
-@font-face {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/ubuntu-v14-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local('Ubuntu Regular'), local('Ubuntu-Regular'),
-        url('../fonts/ubuntu-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('../fonts/ubuntu-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-        url('../fonts/ubuntu-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
-        url('../fonts/ubuntu-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-        url('../fonts/ubuntu-v14-latin-regular.svg#Ubuntu') format('svg'); /* Legacy iOS */
-}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&family=Vollkorn&display=swap');
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
@@ -25,4 +13,19 @@ h1, h2, h3, h4, h5, h6 {
 
 p, button {
     font-family: 'Vollkorn', Georgia, Times, serif;
+}
+
+.btn {
+    background: url('../images/double-bubble-outline.png');
+    background-color: theme-color("secondary");
+    background-blend-mode: multiply;
+}
+
+body {
+    background: url("../images/webb-dark.png");
+}
+
+.entry, .jumbotron {
+    background: url("../images/double-bubble-outline.png");
+    background-blend-mode: multiply;
 }

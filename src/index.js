@@ -3,18 +3,17 @@ import './scss/index.scss';
 import $ from 'jquery';
 import 'jquery-backstretch';
 
-$.backstretch('/assets/img/background-draft.jpg');
-
 $.getJSON('http://localhost/api/get-entries.php').done((entries) => {
-  const cards = $('#cards');
   entries.forEach((entry) => {
-    console.log(entry);
     const { enterer, content } = entry;
-    cards.append(`
-      <div class="card bg-light">
-        <h5 class="card-title">${enterer}</h5>
-        <p class="card-text">${content}</p>
+    const card = $.parseHTML(`
+      <div class="card bg-light my-1 entry">
+        <h5 class="card-title"></h5>
+        <p class="card-text"></p>
       </div>
     `);
+    $(card).find('.card-title').text(enterer);
+    $(card).find('.card-text').text(content);
+    $('#cards').append(card);
   });
 });
