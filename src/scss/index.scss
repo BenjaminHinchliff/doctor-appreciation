@@ -1,6 +1,6 @@
 $theme-colors: (
     "primary": rgb(194, 241, 192),
-    "secondary": #79A177,
+    "secondary": rgb(121, 161, 119),
 );
 
 @import "~bootstrap/scss/bootstrap";
@@ -16,16 +16,20 @@ p, button {
 }
 
 .btn {
-    background: url('../images/double-bubble-outline.png');
-    background-color: theme-color("secondary");
-    background-blend-mode: multiply;
+    background: theme-color("secondary");
+    background: radial-gradient(circle, theme-color("secondary") 90%, theme-color("primary") 100%);
 }
 
 body {
     background: url("../images/webb-dark.png");
 }
 
-.entry, .jumbotron {
+.entry {
     background: url("../images/double-bubble-outline.png");
+    background-blend-mode: multiply;
+}
+
+.jumbotron {
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, theme-color("secondary") 100%), url("../images/double-bubble-outline.png");
     background-blend-mode: multiply;
 }

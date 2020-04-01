@@ -3,6 +3,10 @@ import './scss/index.scss';
 import $ from 'jquery';
 import 'jquery-backstretch';
 
+import config from './config';
+
+const { ids } = config;
+
 $.getJSON('http://localhost/api/get-entries.php').done((entries) => {
   entries.forEach((entry) => {
     const { enterer, content } = entry;
@@ -14,6 +18,6 @@ $.getJSON('http://localhost/api/get-entries.php').done((entries) => {
     `);
     $(card).find('.card-title').text(enterer);
     $(card).find('.card-text').text(content);
-    $('#cards').append(card);
+    $(`#${ids.entries}`).append(card);
   });
 });
