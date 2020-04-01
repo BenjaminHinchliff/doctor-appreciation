@@ -1,0 +1,25 @@
+$theme-colors: (
+    "primary": rgb(194, 241, 192),
+    "secondary": rgb(121, 161, 119),
+);
+
+@import "~bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&family=Vollkorn&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+}
+
+p, button {
+    font-family: 'Vollkorn', Georgia, Times, serif;
+}
+
+.jumbotron {
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, theme-color("secondary") 100%), url("../images/double-bubble-outline.png");
+    background-blend-mode: multiply;
+}
+
+body {
+    background: url("../images/webb-dark.png");
+}

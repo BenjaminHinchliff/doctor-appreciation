@@ -2,6 +2,10 @@
 const config = {
   ids: {
     entries: 'cards',
+    addButton: 'add-button',
+  },
+  locations: {
+    addPage: '/add.html',
   },
 };
 

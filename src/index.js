@@ -1,11 +1,10 @@
 import 'bootstrap';
 import './scss/index.scss';
 import $ from 'jquery';
-import 'jquery-backstretch';
 
 import config from './config';
 
-const { ids } = config;
+const { ids, locations } = config;
 
 $.getJSON('http://localhost/api/get-entries.php').done((entries) => {
   entries.forEach((entry) => {
@@ -21,3 +20,5 @@ $.getJSON('http://localhost/api/get-entries.php').done((entries) => {
     $(`#${ids.entries}`).append(card);
   });
 });
+
+$(`#${ids.addButton}`).click(() => { window.location.pathname = locations.addPage; });
