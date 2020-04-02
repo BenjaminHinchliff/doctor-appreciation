@@ -23,10 +23,19 @@ if (array_key_exists("state", $_GET) && array_key_exists("id", $_GET)) {
 <!DOCTYPE html>
 <html>
     <head>
+        <meta http-equiv="content-language" content="en-us">
+        <!-- favicon stuff -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+        <link rel="manifest" href="/icon/site.webmanifest">
+        <link rel="mask-icon" href="/icon/safari-pinned-tab.svg" color="#ff0000">
+        <link rel="shortcut icon" href="/icon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="/icon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <!-- end favicon stuff -->
         <title>Administrator Panel</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script>
-        </script>
     </head>
     <body>
         <div class="container-xl content">
