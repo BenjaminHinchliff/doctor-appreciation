@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-language" content="en-us">
+        <title>Add Entry</title>
+    </head>
+    <body>
+        <div class="container content">
+            <div class="jumbotron my-1 bg-primary">
+                <h1>Add Entry</h1>
+            </div>
+            <div class="container-flex bg-primary rounded-sm mb-1 p-1">
+                <label for="name">Name: </label>
+                <input class="form-control w-25" type="text" id="name" />
+                <label for="content">Message: </label>
+                <textarea class="form-control" rows="10"></textarea>
+            </div>
+            <button class="btn btn-secondary btn-block" id="add-button">Submit for Review</button>
+            <div id="cards"></div>
+        </div>
+        <script src="add.bundle.js"></script>
+    </body>
+</html>
