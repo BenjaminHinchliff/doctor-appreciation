@@ -119,3 +119,6 @@ web_modules/
 # hide credentials files
 .htpasswd
 credentials.json
+
+# hide debug files
+**/*.js.map

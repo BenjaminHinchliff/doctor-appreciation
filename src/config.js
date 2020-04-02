@@ -7,7 +7,7 @@ const config = {
     },
     locations: {
       addPage: '/add.html',
-      entriesGetPage: 'http://localhost/api/get-entries.php',
+      entriesGetPage: '/api/get-entries.php',
     },
   },
   add: {
@@ -17,7 +17,7 @@ const config = {
       form: 'add-form',
     },
     locations: {
-      entriesAddPage: 'http://localhost/api/add-entry.php',
+      entriesAddPage: '/api/add-entry.php',
     },
   },
 };
