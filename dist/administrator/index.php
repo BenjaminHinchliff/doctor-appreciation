@@ -32,7 +32,7 @@
                 if ($res->num_rows > 0) {
                     while ($row = $res->fetch_assoc()) {
                         echo '<tr>';
-                        echo '    <td>' . htmlspecialchars($row["enterer"]) . '</td>';
+                        echo '    <td style="border-right: 1px solid black;">' . htmlspecialchars($row["enterer"]) . '</td>';
                         echo '    <td>' . htmlspecialchars($row["content"]) . '</td>';
                         echo '    <td><button onclick="setApproval(' . $row["id"]  . ', 1)">approve</button></td>';
                         echo '    <td><button onclick="setApproval(' . $row["id"]  . ', 0)">disapprove</button></td>';
