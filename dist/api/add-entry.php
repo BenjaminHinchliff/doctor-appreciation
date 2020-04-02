@@ -11,9 +11,11 @@ if ($mysqli->connect_errno) {
     exit();
 }
 
-if (!array_key_exists("enterer", $_POST) || !array_key_exists("content", $_POST)) {
-    http_response_code(404);
-    echo json_encode("keys 'enterer', 'content', and 'OTP' must be defined in the post query");
+if (!array_key_exists("enterer", $_POST)
+    || !array_key_exists("content", $_POST)
+    || $_POST["enterer"] == ''
+    || $_POST["content"] == '') {
+    header("Location: /");
     exit();
 }
 
@@ -21,6 +23,6 @@ $req = $mysqli->prepare("INSERT INTO `entries` (`enterer`, `content`) VALUES (?,
 $req->bind_param("ss", $_POST["enterer"], $_POST["content"]);
 $req->execute();
 
-header("Location: http://localhost:9000/");
+header("Location: /");
 
 ?>
