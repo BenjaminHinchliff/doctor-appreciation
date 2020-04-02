@@ -20,6 +20,12 @@ const config = {
       entriesAddPage: '/api/add-entry.php',
     },
   },
+  admin: {
+    classes: {
+      approve: 'approve',
+      disapprove: 'disapprove',
+    },
+  },
 };
 
 export default config;
