@@ -9,13 +9,13 @@
             <div class="jumbotron my-1 bg-primary">
                 <h1>Add Entry</h1>
             </div>
-            <div class="container-flex bg-primary rounded-sm mb-1 p-1">
+            <form method="POST" class="add-form container-flex bg-primary rounded-sm mb-1 p-1">
                 <label for="name">Name: </label>
-                <input class="form-control w-25" type="text" id="name" />
+                <input class="form-control w-25" type="text" id="name" name="enterer" />
                 <label for="content">Message: </label>
-                <textarea class="form-control" rows="10"></textarea>
-            </div>
-            <button class="btn btn-secondary btn-block" id="add-button">Submit for Review</button>
+                <textarea class="form-control" rows="10" name="content"></textarea>
+                <button class="btn btn-secondary btn-block mt-1" id="add-button" type="submit">Submit for Review</button>
+            </form>
             <div id="cards"></div>
         </div>
         <script src="add.bundle.js"></script>

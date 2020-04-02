@@ -115,3 +115,7 @@ web_modules/
 
 # VSCode
 .vscode
+
+# hide credentials files
+.htpasswd
+credentials.json

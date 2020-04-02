@@ -1,0 +1,6 @@
+AuthUserFile "C:/Users/benja/Code/html/DocThing/api/administrator/.htpasswd"
+ AuthName "Restricted Area"
+ AuthType Basic
+ require valid-user
+RewriteEngine On
+ RewriteRule /.htpasswd$ - [F,L] 

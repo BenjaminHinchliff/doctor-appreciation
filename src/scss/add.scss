@@ -1,1 +1,10 @@
 @import './common.scss';
+
+label {
+    font-size: 1.3em;
+}
+
+.add-form {
+    background: url("../images/double-bubble-outline.png");
+    background-blend-mode: multiply;
+}

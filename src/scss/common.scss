@@ -23,3 +23,8 @@ p, button, input, textarea, label {
 body {
     background: url("../images/webb-dark.png");
 }
+
+.btn {
+    background: theme-color("secondary");
+    background: radial-gradient(circle, theme-color("secondary") 90%, theme-color("primary") 100%);
+}

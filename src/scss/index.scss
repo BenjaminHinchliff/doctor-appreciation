@@ -1,10 +1,5 @@
 @import './common.scss';
 
-.btn {
-    background: theme-color("secondary");
-    background: radial-gradient(circle, theme-color("secondary") 90%, theme-color("primary") 100%);
-}
-
 .entry {
     background: url("../images/double-bubble-outline.png");
     background-blend-mode: multiply;

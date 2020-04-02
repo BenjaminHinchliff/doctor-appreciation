@@ -4,9 +4,9 @@ import $ from 'jquery';
 
 import config from './config';
 
-const { ids, locations } = config;
+const { ids, locations } = config.index;
 
-$.getJSON('http://localhost/api/get-entries.php').done((entries) => {
+$.getJSON(locations.entriesGetPage).done((entries) => {
   entries.forEach((entry) => {
     const { enterer, content } = entry;
     const card = $.parseHTML(`
