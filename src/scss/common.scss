@@ -1,6 +1,6 @@
 $theme-colors: (
-    "primary": rgb(194, 241, 192),
-    "secondary": rgb(121, 161, 119),
+    "primary": rgb(140, 222, 255),
+    "secondary": rgb(58, 131, 214),
 );
 
 @import "~bootstrap/scss/bootstrap";
@@ -16,8 +16,13 @@ p, button, input, textarea, label {
 }
 
 .jumbotron {
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, theme-color("secondary") 100%), url("../images/double-bubble-outline.png");
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, theme-color("secondary") 100%), url("../images/double-bubble-outline.png"), url("../images/logo.png") no-repeat ;
+    background-size: contain, auto;
     background-blend-mode: multiply;
+}
+
+.jumbotron > p, h1 {
+    color: theme-color("light");
 }
 
 body {
