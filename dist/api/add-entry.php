@@ -23,6 +23,6 @@ $req = $mysqli->prepare("INSERT INTO `entries` (`enterer`, `content`) VALUES (?,
 $req->bind_param("ss", $_POST["enterer"], $_POST["content"]);
 $req->execute();
 
-header("Location: /");
+header("Location: /confirmation.html");
 
 ?>

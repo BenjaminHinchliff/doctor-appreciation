@@ -53,6 +53,7 @@ const user = {
   entry: {
     index: './src/index.js',
     add: './src/add.js',
+    confirmation: './src/confirmation.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),

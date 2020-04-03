@@ -26,6 +26,11 @@ const config = {
       disapprove: 'disapprove',
     },
   },
+  confirmation: {
+    ids: {
+      toHomeButton: 'home',
+    },
+  },
 };
 
 export default config;

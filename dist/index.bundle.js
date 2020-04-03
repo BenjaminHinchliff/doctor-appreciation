@@ -18381,6 +18381,11 @@ const config = {
       disapprove: 'disapprove',
     },
   },
+  confirmation: {
+    ids: {
+      toHomeButton: 'home',
+    },
+  },
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (config);
