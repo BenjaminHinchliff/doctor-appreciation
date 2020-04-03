@@ -18456,11 +18456,11 @@ jquery__WEBPACK_IMPORTED_MODULE_2___default.a.getJSON(locations.entriesGetPage).
     const { enterer, content } = entry;
     const card = jquery__WEBPACK_IMPORTED_MODULE_2___default.a.parseHTML(`
       <div class="card bg-light my-1 entry">
-        <h5 class="card-title"></h5>
-        <p class="card-text"></p>
+        <p class="card-text mb-0 lead"></p>
+        <h5 class="card-signature font-italic ml-3"></h5>
       </div>
     `);
-    jquery__WEBPACK_IMPORTED_MODULE_2___default()(card).find('.card-title').text(enterer);
+    jquery__WEBPACK_IMPORTED_MODULE_2___default()(card).find('.card-signature').text(`-${enterer}`);
     jquery__WEBPACK_IMPORTED_MODULE_2___default()(card).find('.card-text').text(content);
     jquery__WEBPACK_IMPORTED_MODULE_2___default()(`#${ids.entries}`).append(card);
   });

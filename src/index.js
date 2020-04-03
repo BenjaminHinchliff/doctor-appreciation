@@ -11,11 +11,11 @@ $.getJSON(locations.entriesGetPage).done((entries) => {
     const { enterer, content } = entry;
     const card = $.parseHTML(`
       <div class="card bg-light my-1 entry">
-        <h5 class="card-title"></h5>
-        <p class="card-text"></p>
+        <p class="card-text mb-0 lead"></p>
+        <h5 class="card-signature font-italic ml-3"></h5>
       </div>
     `);
-    $(card).find('.card-title').text(enterer);
+    $(card).find('.card-signature').text(`-${enterer}`);
     $(card).find('.card-text').text(content);
     $(`#${ids.entries}`).append(card);
   });
