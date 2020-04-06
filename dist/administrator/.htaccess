@@ -1,6 +1,4 @@
-AuthUserFile "C:/Users/benja/Code/html/DocThing/dist/administrator/.htpasswd"
- AuthName "Restricted Area"
- AuthType Basic
- require valid-user
-RewriteEngine On
- RewriteRule /.htpasswd$ - [F,L] 
+AuthName "Restricted Area"
+AuthType Basic
+AuthUserFile /home/ben_thanks/thanks/administrator/.htpasswd
+Require valid-user
